@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+:root{
+    --bg-color:#1b1b1b;
+    --yellow: #FCD900;
+    --white: #ffffff;
+    --dark: #000000;
+}
+
+.title{
+    color: var(--yellow);
+    text-transform: uppercase;
+}
+
+.subtitle{
+    color: var(--dark);
+}
+
+.paragraph{
+    color: var(--dark);
+}
+
+.container1{
+    width: 50%;
+    display: flex;
+}
+
+.text-container h1{
+    font-size: 50px;
+}
+
+.text-container h1,.text-container h3{
+    margin-bottom: 2%;
+}
+
+.container-container{
+    display: block;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    /* flex-direction: column; */
+    
+}
+
+.container2{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+.dot-container{
+    /* width: 350px;
+    height: 350px; */
+}
+
+.img-banner{
+    width: 100%;
+}
+
+.img-banner img{
+    width: 100%;
+    margin-left: 10%;
+}
+
+.dot-container{
+    height: 400px;
+    width: 400px;
+    background: rgb(252,217,0);
+    background: linear-gradient(180deg, rgba(252,217,0,1) 0%, rgba(97,86,19,1) 100%);
+    border-radius: 50%;
+    display: flex;
+    /* position: absolute; */
+}
+
+.btn-comprar{
+    margin-top: 5%;
+    font-weight: 800;
+    background-color: var(--yellow);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.pc-container{
+    margin-top: 10%;
+    display: flex;
+}
+
+/* Carousel */
+
+.container{
+    position: relative;
+}
+
+.container .wrapper{
+    width: 70vw;
+    height: 75vh;
+    /* border: 1px solid black; */
+    margin: 5rem auto;
+    overflow: hidden;
+    
+}
+
+.container .slider-holder{
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    height: 100%;
+    /* animation: slide 15s ease infinite; */
+
+}
+
+.container .button-holder{
+    position: absolute;
+    bottom: 0%;
+    left: 47%;
+}
+
+    .container .button-holder{
+
+    }
+
+.container .button-holder .dots{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 3rem;
+    background-color: var(--yellow);
+    margin: .4rem .3rem
+}
+
+@keyframes slide{
+    0%{transform:translateX(0%)}
+    10%{transform:translateX(-100%)}
+    20%{transform:translateX(-100%)}
+    30%{transform:translateX(-100%)}
+    40%{transform:translateX(-200%)}
+    50%{transform:translateX(-200%)}
+    60%{transform:translateX(-200%)}
+    70%{transform:translateX(0%)}
+    80%{transform:translateX(0%)}
+    90%{transform:translateX(0%)}
+    100%{transform:translateX(0%)}
+}
